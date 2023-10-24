@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="widh-device-widh, initial-scale-1.0">
+        <title>Login</title>
+        <link rel="icon" href="img/2023-03-16_102153-removebg-preview.png">
+        <link rel="stylesheet" href="css/estilos2.css">
+</head>
+<body class="fondo">
+    <div class="container">
+        <div class="container__forn">
+            <img src="img/2023-03-16_102153-removebg-preview.png" alt="esto es una imagen de candado">
+            <h2>Iniciar Sesion</h2>
+            <form action="../controlador/login.php" method="POST" onsubmit="return validar();"> 
+                <input type="text" placeholder="Usuario" name="usuario" id="usuario">
+                <input type="password" placeholder="Contraseña" name="contrasena" id="contrasena">
+                <input class="ckeck" type="checkbox" id="checkid">  
+                <label for="checkid">Recuerdame</label>
+                
+                <a href="#">Olvidaste tu contraseña?</a>
+                <input class="boton" type="submit" value="Iniciar Sesión">
+                <p>
+                <div id="mensaje" style="background:#0a1e35; width:350px; text-align: center; color: white;">
+                </div>
+            </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/validar.js"></script>
+
+</body>
+</html>

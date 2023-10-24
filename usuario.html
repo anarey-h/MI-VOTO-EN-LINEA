@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>MI VOTO EN LINEA</title>
+  <link rel="stylesheet" href="css/bootstrap.css"> 
+  <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body id="page-top">
+
+ <!--menu-->
+
+  <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+ 
+    <header>
+
+        <link rel="stylesheet" href="css/menu.css">
+
+        <a class="logo"><img src="img/uno.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#instrucciones">Instrucciones</a></li>
+            <li><a href="#portfolio">Candidatos</a></li>
+            <li><a href="#contact">Contáctanos</a></li>
+
+
+            <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Hola <?php echo $_SESSION['activo'];?> <img src="img/desconocido.png">
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="cuenta.php">Mi cuenta</a>
+          <a class="dropdown-item" href="salir.php">Salir</a>
+        </div>
+      </li>
+        </ul>
+
+       
+
+    </header>
+    <section class="page-section" id="instrucciones">
+                   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/img2.svg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img2.svg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    
+    <form id="votingForm">
+
+ 
+<section class="page-section bg-light" id="portfolio">
+    <div class="container">
+        <div class="text-center">
+          <h1 class="section-heading text-uppercase">Elecciones Presidenciales 2022 - Colombia</h1>
+            <h2 class="section-heading text-uppercase">Seleccione su candidato</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Portfolio item 1-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        <img class="img-fluid" src="img/img6.jpg" alt="..." />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">GUSTAVO PETRO</div>
+                        <div class="portfolio-caption-subheading text-muted">Pacto Histórico</div>
+                        <input type="radio" name="candidate" value="GUSTAVO PETRO">
+                    </div>
+                </div>
+            </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <img class="img-fluid" src="img/img10.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">FEDERICO GUTIÉRREZ</div>
+                                <div class="portfolio-caption-subheading text-muted">Equipo por Colombia</div>
+                                <input type="radio" name="candidate" value="FEDERICO GUTIÉRREZ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <img class="img-fluid" src="img/img8.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">SERGIO FAJARDO</div>
+                                <div class="portfolio-caption-subheading text-muted">Centro Esperanza</div>
+                                <input type="radio" name="candidate" value="SERGIO FAJARDO">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <img class="img-fluid" src="img/img13.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">INGRID BETANCOURT</div>
+                                <div class="portfolio-caption-subheading text-muted">Verde Oxígeno</div>
+                                <input type="radio" name="candidate" value="INGRID BETANCOURT">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <img class="img-fluid" src="img/img7.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">RODOLFO HERNÁNDEZ</div>
+                                <div class="portfolio-caption-subheading text-muted">Liga de Gobernantes Anticorrupción</div>
+                                <input type="radio" name="candidate" value="RODOLFO HERNÁNDEZ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                               <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <img class="img-fluid" src="img/img12.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">LUIS PÉREZ</div>
+                                <div class="portfolio-caption-subheading text-muted">Colombia piensa en grande</div>
+                                <input type="radio" name="candidate" value="LUIS PÉREZ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <img class="img-fluid" src="img/img9.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">JOHN MILTON</div>
+                                <div class="portfolio-caption-subheading text-muted">Colombia Justa-Libres</div>
+                                <input type="radio" name="candidate" value="JOHN MILTON">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <img class="img-fluid" src="img/Captura de pantalla 2023-07-13 110209.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">ENRIQUE GÓMEZ</div>
+                                <div class="portfolio-caption-subheading text-muted">Salvación Nacional</div>
+                                <input type="radio" name="candidate" value="ENRIQUE GÓMEZ">
+                        </div>
+                      </div>
+                    </div>
+               <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Portfolio item 7-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
+                      <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        <img class="img-fluid" src="img/62ae4cbbb6e83.r_1662587604311.0-208-3000-1710.jpeg" alt="..." />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">LUIS GILBERTO</div>
+                        <div class="portfolio-caption-subheading text-muted">Colombia Renaciente</div>
+                        <input type="radio" name="candidate" value="LUIS GILBERTO">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/voto.css">
+     <button type="button" class="boton center-button" onclick="submitVote()">Votar</button>
+    </form>
+    
+    <p id="message"></p>
+</section>
+       
+    
+    <script>
+        let hasVoted = false;
+        
+        function submitVote() {
+            if (!hasVoted) {
+                const selectedCandidate = document.querySelector('input[name="candidate"]:checked');
+                
+                if (selectedCandidate) {
+                    const candidateName = selectedCandidate.value;
+                    document.getElementById('message').textContent = `¡Has votado por ${candidateName}!`;
+                    hasVoted = true;
+                } else {
+                    document.getElementById('message').textContent = 'Por favor, seleccione un candidato.';
+                }
+            } else {
+                document.getElementById('message').textContent  = 'Ya has emitido tu voto.';
+            }
+        }
+    </script>
+            <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contáctanos</h2>
+                    <h3 class="section-subheading text-muted">Tu opinión nos ayuda a mejorar</h3>
+                </div>
+             
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Nombre del input-->
+                                <input class="form-control" id="name" type="text" placeholder="Nombre *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email -->
+                                <input class="form-control" id="email" type="email" placeholder="Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Se requiere un email</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">El correo no es válido</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Numero de telefono-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Numero telefonico *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Se requiere un número de teléfono</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Mensaje-->
+                                <textarea class="form-control" id="message" placeholder="Mensaje *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un mensaje</div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                   
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Boton-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; 2023</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/login?lang=es" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://es-la.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://co.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Política de Privacidad</a>
+                        <a class="link-dark text-decoration-none" href="#!">Condiciones de uso</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <div class="slider_btn slider_btn--right"></div>
+    <div class="slider_btn slider_btn--left"></div>
+    
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
